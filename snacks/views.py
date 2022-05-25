@@ -17,6 +17,7 @@ class SnackCreateView(CreateView):
     template_name = 'snack_create.html'
 
 
+
 class SnackUpdateView(UpdateView):
     template_name = 'snack_update.html'
 
