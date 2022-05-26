@@ -2,4 +2,14 @@
 
 {% block content %}
 
+<ul>
+    {% for snack in object_list %}
+    <li>
+        <a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a>
+    </li>
+    {% endfor %}
+    <br/>
+
+    <a href="{% url 'snack_create' %}">+ Create Snack</a>
+</ul>
 {% endblock content %}

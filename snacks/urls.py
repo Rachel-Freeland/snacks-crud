@@ -1,5 +1,10 @@
 from django.urls import path
-from .views import SnackDetailView, SnackListView, SnackCreateView, SnackDeleteView, SnackUpdateView
+from .views import (
+    SnackCreateView,
+    SnackDeleteView,
+    SnackDetailView,
+    SnackListView,
+    SnackUpdateView)
 
 urlpatterns =[
     path('', SnackListView.as_view(), name='snack_list'),
