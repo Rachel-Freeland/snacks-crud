@@ -2,4 +2,12 @@
 
 {% block content %}
 
+<h1>Remove {{ snack.title }}</h1>
+    <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to remove {{ snack.title }}?</p>
+    <input type="submit" value="OK">
+    </form>
+
+
 {% endblock content %}
